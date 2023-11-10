@@ -38,7 +38,7 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
-      - run: dotnet pack openhardwaremonitor/openhardwaremonitor.csproj --configuration Release --output ${{ env.NuGetDirectory }} /p:Version=${{needs.create-version.outputs.version}}
+      - run: dotnet pack openhardwaremonitor.csproj --configuration Release --output ${{ env.NuGetDirectory }} /p:Version=${{needs.create-version.outputs.version}}
 
       # Publish all NuGet packages to NuGet.org
       # Use --skip-duplicate to prevent errors if a package with the same version already exists.
