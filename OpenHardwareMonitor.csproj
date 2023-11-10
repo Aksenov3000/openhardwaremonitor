@@ -5,6 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationManifest>Resources\app.manifest</ApplicationManifest>
+    <PackageId>OpenHardwareMonitorLibNet</PackageId>
+    <Title>Open Hardware Monitor Library targeting to .NET 7.0. </Title>
+    <Description>The Open Hardware Monitor is a free open source software that monitors temperature sensors, fan speeds, voltages, load and clock speeds of a computer</Description>
+    <PackageProjectUrl>https://openhardwaremonitor.org/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Aksenov3000/openhardwaremonitor</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
