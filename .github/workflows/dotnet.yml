@@ -37,6 +37,8 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
 
+      - run: get-childitem
+
       # Create the NuGet package in the folder from the environment variable NuGetDirectory
       - run: dotnet pack openhardwaremonitor.csproj --configuration Release --output ${{ env.NuGetDirectory }} /p:Version=${{needs.create-version.outputs.version}}
 
